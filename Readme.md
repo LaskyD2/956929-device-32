@@ -3,7 +3,7 @@
 * Студент: [Денис Макаров](https://up.htmlacademy.ru/htmlcss/32/user/956929).
 * Наставник: [Алим Нагоев](https://htmlacademy.ru/profile/id911531).
 
----
+--- 
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
