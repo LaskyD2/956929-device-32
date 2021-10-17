@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +15,13 @@
   <header class="page-header">
     <a class="header-logo" href="#" title="Логотип">
       <span class="visually-hidden">Логотип интернет магазина Девайс</span>
-      <img class="logo-image" src="" alt="Логотип интернет магазина Девайс">
+      <img class="logo-image" src="images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс">
     </a>
     <div class="header-row">
       <form class="form-search" acrion="https://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden">Форма поиск</label>
-        <input class="form-search-search" type="text" placeholder="Поиск по сайту">
         <button class="form-search-button" type="submit">Найти</button>
+        <input class="form-search-search" type="text" placeholder="Поиск по сайту">
       </form>
       <ul class="user-menu-list">
         <li class="user-menu-item">
@@ -108,7 +109,7 @@
         <ul class="slider-list">
           <li class="slider-item">
             <div class="slider-item-column">
-              <img class="slider-image" src="" alt="Квадракоптер">
+              <img class="slider-image" src="images/slider-product-1.png" width="560" height="560" alt="Квадракоптер">
             </div>
             <div class="slider-item-column">
               <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -133,7 +134,7 @@
           </li>
           <li class="slider-item">
             <div class="slider-item-column">
-              <img class="slider-image" src="" alt="Фитнес-браслет">
+              <img class="slider-image" src="images/slider-product-2.png" width="560" height="560" alt="Фитнес-браслет">
             </div>
             <div class="slider-item-column">
               <h3 class="slider-title">Худеем правильно!</h3>
@@ -153,7 +154,8 @@
           </li>
           <li class="slider-item">
             <div class="slider-item-column">
-              <img class="slider-image" src="" alt="Палка для селфи">
+              <img class="slider-image" src="images/slider-product-3.png" width="560" height="560"
+                alt="Палка для селфи">
             </div>
             <div class="slider-item-column">
               <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
@@ -219,7 +221,8 @@
         <li class="categories-item">
           <a class="categories-link" href="#">
             <div class="categories-item-header">
-              <img class="categories-image" src="" alt="Виртуальная реальность">
+              <img class="categories-image" src="images/category_vr.svg" width="97" height="55"
+                alt="Виртуальная реальность">
             </div>
             <h3 class="categories-item-name">Виртуальная реальность</h3>
           </a>
@@ -227,7 +230,8 @@
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">
             <div class="categories-item-header">
-              <img class="categories-image" src="" alt="Моноподы для селфи">
+              <img class="categories-image" src="images/category_monopod.svg" width="86" height="117"
+                alt="Моноподы для селфи">
             </div>
             <h3 class="categories-item-name">Моноподы для селфи</h3>
           </a>
@@ -235,7 +239,7 @@
         <li class="categories-item">
           <a class="categories-link" href="#">
             <div class="categories-item-header">
-              <img class="categories-image" src="" alt="Экшн-камера">
+              <img class="categories-image" src="images/category_camera.svg" width="71" height="87" alt="Экшн-камера">
             </div>
             <h3 class="categories-item-name">Экшн-камера</h3>
           </a>
@@ -243,7 +247,8 @@
         <li class="categories-item">
           <a class="categories-link" href="#">
             <div class="categories-item-header">
-              <img class="categories-image" src="" alt="Фитнес-браслеты">
+              <img class="categories-image" src="images/category_fitnes_braclet.svg" width="107" height="65"
+                alt="Фитнес-браслеты">
             </div>
             <h3 class="categories-item-name">Фитнес-браслеты</h3>
           </a>
@@ -251,7 +256,8 @@
         <li class="categories-item">
           <a class="categories-link" href="#">
             <div class="categories-item-header">
-              <img class="categories-image" src="" alt="Умные часы">
+              <img class="categories-image" src="images/category_smart_watch.svg" width="56" height="98"
+                alt="Умные часы">
             </div>
             <h3 class="categories-item-name">Умные часы</h3>
           </a>
@@ -259,7 +265,8 @@
         <li class="categories-item">
           <a class="categories-link" href="#">
             <div class="categories-item-header">
-              <img class="categories-image" src="" alt="Квадракоптеры">
+              <img class="categories-image" src="images/category_copter.svg" width="132" height="69"
+                alt="Квадракоптеры">
             </div>
             <h3 class="categories-item-name">Квадракоптеры</h3>
           </a>
@@ -304,6 +311,9 @@
               наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </li>
         </ul>
+        <div class="services-image-block">
+          <img class="services-iamge" src="images/delivery.svg" alt="Доставка">
+        </div>
       </div>
     </section>
     <!-- Доставка -->
@@ -311,7 +321,7 @@
       <h2 class="visually-hidden">Доставка</h2>
       <div class="delivery-row">
         <div class="delivery-image-block">
-          <img class="delivery-iamge" src="" alt="Доставка">
+          <img class="delivery-iamge" src="images/delivery_fast.svg" alt="Доставка">
         </div>
         <h3 class="delivery-text">Доставим редкий товар под заказ</h3>
         <button class="delivery-info" type="button">
@@ -331,10 +341,10 @@
           <li class="about-item">СДИК</li>
           <li class="about-item">ТоксБерри</li>
         </ul>
-        <a class="button about-button" href="#">Подробнее о нас</a>
+        <a class="link-detailed about-button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <h2 class="company-title contacts-title">Контакиы</h2>
+        <h2 class="company-title contacts-title">Контакты</h2>
         <p class="company-text">Вы можете забрать товар сами, заехав в наш офис.
           Заодно, сможете проверить работоспособность покупки. </p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -347,7 +357,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="contacts-link" href="#">Напишите нам</a>
+        <a class="link-detailed contacts-link" href="#">Напишите нам</a>
       </section>
     </div>
     <!-- Рассылка -->
@@ -361,7 +371,7 @@
         <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="newsletters-email">
             <span class="visually-hidden" for="mailing-email">Ваш Email</label>
-          <input class="newsletters-ащкь-field" placeholder="Ваш e-mail" type="email" name="mailing-email"
+          <input class="newsletters-form-field" placeholder="Ваш e-mail" type="email" name="mailing-email"
             id="mailing-email" required>
           </label>
           <button class="newsletters-form-buttom" type="submit">Подписаться</button>
@@ -376,7 +386,8 @@
     <section class="footer-address">
       <h2 class="visually-hidden">Адрес</h2>
       <a class="footer-logo" href="#">
-        <img class="footer-logo-image" src="" alt="Логотип интернет магазина Девайс">
+        <img class="footer-logo-image" src="images/logo_yellow.svg" width="145" height="36"
+          alt="Логотип интернет магазина Девайс">
       </a>
 
       <address class="footer-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
@@ -414,8 +425,10 @@
     </section>
     <section class="footer-authors">
       <h2 class="visually-hidden">Контаты HTMLAcademy</h2>
-      <a class="footer-phone" href="tel:+78128121212">+7 812 812-12-12</a>
-      <a class="footer-authors-link" href="https://htmlacademy.ru/">Пока вместо svg</a>
+      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-authors-link" href="https://htmlacademy.ru/">
+        <img class="footer-link-htmlacademy" src="images/htmlacademy.svg" width="115" height="34" alt="HTML Academy">
+      </a>
     </section>
   </footer>
   <!-- FOOTER END -->
