@@ -14,18 +14,17 @@
   <!-- HEADER START -->
   <header class="page-header container">
     <nav class="navigation">
-      <a class="header-logo" href="#" title="Логотип">
+      <a class="header-logo" href="index.html" title="Логотип интернет магазина Девайс">
         <span class="visually-hidden">Логотип интернет магазина Девайс</span>
         <img class="logo-image" src="images/svg/logo.svg" width="145" height="36"
           alt="Логотип интернет-магазина Девайс">
       </a>
       <div class="header-row">
-        <form class="form-search" acrion="https://echo.htmlacademy.ru" method="get">
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden">Форма поиск</label>
-          <button class="form-search-button" type="submit">
-            <img class="form-search-icon" src="images/svg/search.svg" width="16" height="16" alt="Форма поиска">
-          </button>
+          <img class="form-search-icon" src="images/svg/search.svg" width="16" height="16" alt="Форма поиска">
           <input class="form-search-input" type="text" placeholder="Поиск по сайту">
+          <button class="form-search-button" type="submit">Найти</button>
         </form>
         <ul class="user-menu-list reset-ul">
           <li class="user-menu-item">
@@ -46,7 +45,8 @@
             </a>
           </li>
           <li class="user-menu-item">
-            <a class="user-menu-link" href="#">
+            <a class="user-menu-link menu-basket" href="#">
+              <span class="menu-basket-value">2</span>
               <img class="user-menu-icon" src="images/svg/cart.svg" width="16" height="14" alt="Корзина">
               <span class="user-menu-text">Корзина</span>
             </a>
@@ -63,20 +63,20 @@
               <li class="menu-submenu-item">
                 <ul class="menu-submenu-column reset-ul">
                   <li class="submenu-column-item">
-                    <a class="submenu-column-list" href="#">Виртуальная реальсность</a>
+                    <a class="submenu-column-list" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="submenu-column-item">
-                    <a class="submenu-column-list" href="catalog.html">Модоподы для селфи</a>
+                    <a class="submenu-column-list" href="catalog.html">Моноподы для селфи</a>
                   </li>
                   <li class="submenu-column-item">
-                    <a class="submenu-column-list" href="#">Экшн-камера</a>
+                    <a class="submenu-column-list" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
               </li>
               <li class="menu-submenu-item">
                 <ul class="menu-submenu-column reset-ul">
                   <li class="submenu-column-item">
-                    <a class="submenu-column-list" href="#">Фитнес часы</a>
+                    <a class="submenu-column-list" href="#">Фитнес-браслеты</a>
                   </li>
                   <li class="submenu-column-item">
                     <a class="submenu-column-list" href="#">Умные часы</a>
@@ -86,7 +86,7 @@
               <li class="menu-submenu-item">
                 <ul class="menu-submenu-column reset-ul">
                   <li class="submenu-column-item">
-                    <a class="submenu-column-list" href="#">Квадракоптер</a>
+                    <a class="submenu-column-list" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </li>
@@ -113,7 +113,7 @@
   </header>
   <!-- HEADER END -->
   <!-- MAIN START -->
-  <main class="main-inner container">
+  <main class="main">
     <header class="inner-header">
       <h1 class="inner-header-title title-1">Моноподы для селфи</h1>
       <ul class="breadcrumbs reset-ul">
@@ -131,8 +131,8 @@
 
     <section class="catalog">
       <div class="catalog-filters">
-        <div class="catalog-filters-row">
-          <h2 class="catalog-filters-title">Фильтр:</h2>
+        <div class="catalog-filters-row container">
+          <h2 class="catalog-filters-title title-3">Фильтр:</h2>
         </div>
         <!-- Фильтр -->
         <div class="catalog-filter-wrapper">
@@ -222,7 +222,7 @@
         <div class="catalog-sort-wrapper">
           <div class="catalog-sort">
             <form class="sorting-type">
-              <label class="catalog-title" for="sorting">Сортировка:</label>
+              <label class="catalog-title title-3" for="sorting">Сортировка:</label>
               <select class="select-control" id="sorting">
                 <option value="popular">Сначала популярные</option>
                 <option value="cheap">Сначала дешёвое</option>
@@ -319,7 +319,7 @@
               </div>
             </li>
           </ul>
-          <button class="button pagination-show-more">Загрузить ещё</button>
+          <button class="pagination-show-more title-3">Загрузить ещё</button>
           <ul class="pagination reset-ul">
             <li class="pagination-item">
               <a class="pagination-link pagination-prev pagination-disabled">
@@ -356,7 +356,7 @@
   <footer class="page-footer">
     <div class="page-footer-wrapper container">
       <div class="footer-item footer-address">
-        <a class="footer-logo" href="#">
+        <a class="footer-logo" href="index.html">
           <img class="footer-logo-image" src="images/svg/logo-yellow.svg" width="145" height="36"
             alt="Логотип интернет магазина Девайс">
         </a>
@@ -376,20 +376,37 @@
         </ul>
         <ul class="footer-social-list reset-ul">
           <li class="footer-social-item">
-            <a class="social-link" href="#">
-              <img class="social-icon" src="images/svg/facebook.svg" width="9" height="18" alt="Логотип Фэйсбук">
+            <a class="social-link" href="https://www.facebook.com/htmlacademy">
+              <svg class="social-icon" width="9" height="18" viewBox="0 0 9 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z"
+                  fill="none"></path>
+              </svg>
               <span class="visually-hidden">Фэйсбук</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
-              <img class="social-icon" src="images/svg/instagram.svg" width="16" height="16" alt="Логотип Инстаграм">
+            <a class="social-link" href="https://www.instagram.com/htmlacademy/">
+              <svg class="social-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                  fill="none"></path>
+                <path
+                  d="M14.7 1.3C13.8 0.4 12.7 0 11.3 0H4.7C1.9 0 0 1.9 0 4.7V11.3C0 12.7 0.4 13.9 1.4 14.7C2.3 15.6 3.4 16 4.7 16H11.3C12.7 16 13.9 15.6 14.7 14.7C15.5 13.8 16 12.7 16 11.3V4.7C16 3.3 15.6 2.1 14.7 1.3ZM8 12.1C5.8 12.1 3.9 10.3 3.9 8C3.9 5.7 5.8 3.9 8 3.9C10.2 3.9 12.1 5.7 12.1 8C12.1 10.3 10.2 12.1 8 12.1ZM12.6 4.7C11.9 4.7 11.3 4.2 11.3 3.4C11.3 2.6 11.8 2.1 12.6 2.1C13.3 2.1 13.9 2.7 13.9 3.4C13.9 4.1 13.3 4.7 12.6 4.7Z"
+                  fill="none"></path>
+              </svg>
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
-              <img class="social-icon" src="images/svg/twitter.svg" width="15" height="14" alt="Логотип Твиттер">
+            <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+              <svg class="social-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.7 0.0999675C11.2 -0.400033 12.3 0.399967 12.9 1.19997C13.4 0.999967 14 0.799967 14.6 0.599967C14.6 1.39997 14.1 1.99997 13.8 2.19997C14.5 2.39997 15 1.79997 15 1.79997C14.9 2.69997 14.1 3.49997 13.6 3.69997C13.4 9.99997 10.8 14.1 4.7 14C4.2 14 4.8 14 4.3 14C4 14 0.6 13.6 0 12.2C2 12.4 3.4 11.8 4.1 11.1C3.3 10.8 1.7 10.7 1.5 8.29997C1.8 8.49997 2 8.59997 2.6 8.49997C1.5 7.69997 0.3 6.99997 0.4 4.99997C0.7 5.29997 1.3 5.49997 1.6 5.39997C1 5.19997 -0.2 2.29997 0.8 0.799967C2.4 2.49997 4.1 4.19997 7.1 4.29997C7.3 2.19997 8.1 0.799967 9.7 0.0999675Z"
+                  fill="none"></path>
+              </svg>
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
