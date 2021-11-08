@@ -45,6 +45,36 @@
               <img class="user-menu-icon" src="images/svg/cart.svg" width="16" height="14" alt="Корзина">
               <span class="user-menu-text">Корзина</span>
             </a>
+            <div class="popover popover-cart">
+              <h2 class="visually-hidden">Корзина</h2>
+              <ul class="cart-items-list reset-ul">
+                <li class="cart-item">
+                  <img class="cart-item-image" src="images/catalog/product-1-small.png" width="41" height="43"
+                    alt="Любительская селфи-палка">
+                  <p class="cart-item-title reset-indent">Любительская селфи-палка</p>
+                  <button class="cart-item-button" type="button">
+                    <img class="cart-item-icon" src="images/svg/delete.svg" width="11" height="11" alt="Закрыть">
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <img class="cart-item-image" src="images/catalog/product-2-small.png" width="41" height="43"
+                    alt="Любительская селфи-палка">
+                  <p class="cart-item-title reset-indent">Профессиональная селфи-палка</p>
+                  <button class="cart-item-button" type="button">
+                    <img class="cart-item-icon" src="images/svg/delete.svg" width="11" height="11" alt="Закрыть">
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-items-result">
+                <p class="items-result-text reset-indent">Товаров: 2</p>
+                <p class="items-result-text reset-indent">Сумма: 2000 ₽</p>
+              </div>
+              <div class="cart-button-wrapper">
+                <button class="button cart-button" type="button">
+                  Открыть корзину
+                </button>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -512,6 +542,71 @@
     </div>
   </footer>
   <!-- FOOTER END -->
+
+  <div class="modal-container">
+    <div class="modal modal-order">
+      <section class="modal-content">
+        <h2 class="modal-title reset-indent title-1">Доставка под заказ</h2>
+        <button class="modal-close-button">
+          <img class="modal-close-icon" src="images/svg/delete.svg" width="26" height="26" alt="Закрыть">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </section>
+
+      <form class="order-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="field-group order-form-name">
+          <label class="form-label" for="order-name">
+            Ваше имя:
+          </label>
+          <input class="field" type="text" id="order-name" name="order-name" placeholder="Имя Фамилия" required>
+          <span class="field-subtitle red">Пожалуйста, предствьтесь</span>
+        </div>
+        <div class="field-group order-form-email">
+          <label class="form-label" for="order-email">
+            Ваш e-mail:
+          </label>
+          <input class="field" type="text" id="order-email" name="order-email" placeholder="krasotka92@mail.ru"
+            required>
+          <span class="field-subtitle">Забавный у вас адрес</span>
+        </div>
+        <div class="field-group order-form-what">
+          <label class="form-label" for="order-what">
+            Что нужно привезти:
+          </label>
+          <input class="field" type="text" id="order-what" name="order-what" placeholder="В свободной форме" required>
+        </div>
+        <div class="field-group order-form-quantity">
+          <label class="form-label" for="order-quantity">
+            Количество:
+          </label>
+          <button class="botton-info" type="button">i</button>
+
+          <div class="info-hint">
+            <p class="info-hint-text reset-indent">Постараемся найти, сколько нужно. Привезём сколько получится по
+              требованиям
+              к провозу багажа.</p>
+          </div>
+
+          <span class="visually-hidden">Кнопка информация</span>
+          <div class="quantity-block">
+            <button class="btn-quantity minus" type="button"></button>
+            <span class="visually-hidden">Кнопка минус</span>
+            <input class="quantity" type="number" id="order-quantity" name="order-quantity" value="1">
+            <button class="btn-quantity plus" type="button"></button>
+            <span class="visually-hidden">Кнопка плюс</span>
+          </div>
+        </div>
+        <button class="button button-order-submit" type="submit">Отправить</button>
+        <span class="visually-hidden">Кнопка отправить</span>
+        <div class="popover popover-info visually-hidden">
+          <p class="popover-info-text">
+            Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
 </body>
 
 </html>
