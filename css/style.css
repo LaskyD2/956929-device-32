@@ -84,6 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 1160px;
 }
 
 a {
@@ -481,11 +482,6 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
-}
-
-.menu-submenu:hover ~ .menu-link-navigation::before {
-  background: url("../images/svg/minus.svg") no-repeat center;
-  border-color: var(--b-black);
 }
 
 .menu-item-parent:hover .menu-submenu {
