@@ -237,10 +237,6 @@ img {
   background-color: var(--yellow-hover);
 }
 
-.button-hover:focus::before {
-  background-color: var(--yellow-hover);
-}
-
 .services-item-button {
   width: 160px;
   padding-left: 20px;
@@ -274,6 +270,7 @@ img {
   position: absolute;
   top: -22px;
   left: 60px;
+  outline: none;
 }
 
 .header-row {
@@ -834,7 +831,6 @@ img {
   width: 280px;
   flex-shrink: 0;
   padding-top: 12px;
-  /*  */
   display: grid;
   row-gap: 23px;
 }
@@ -1280,11 +1276,6 @@ img {
   color: var(--b-black);
 }
 
-.product-card-link span {
-  display: block;
-  line-height: 28px;
-}
-
 .select-control {
   font-family: var(--primary-ff);
   font-style: normal;
@@ -1313,6 +1304,7 @@ img {
   position: relative;
   display: block;
   margin-bottom: 33px;
+  border: none;
 }
 
 .product-card-overlay {
@@ -1337,6 +1329,14 @@ img {
 
 .product-card-header:hover .product-card-overlay {
   opacity: 1;
+}
+
+.product-card-header:focus {
+  outline: 5px solid var(--purple);
+}
+
+.product-card:focus-within {
+  color: var(--purple);
 }
 
 .link-detailed {
@@ -1422,7 +1422,7 @@ img {
   position: absolute;
   left: 0;
   width: 114px;
-  height: 1px;
+  height: 2px;
   background-color: var(--b-black);
 }
 
@@ -1434,6 +1434,7 @@ img {
   border: 2px solid var(--b-black);
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .range-toggle:focus,
@@ -1480,6 +1481,7 @@ img {
   border: none;
   color: inherit;
   appearance: textfield;
+  outline: none;
 }
 
 .range-input-right {
@@ -1506,6 +1508,8 @@ img {
   width: 20px;
   height: 20px;
   border: 2px solid var(--b-black);
+  opacity: 0.2;
+  border-radius: 3px;
 }
 
 .control-mark::after {
@@ -1536,6 +1540,66 @@ img {
   display: block;
 }
 
+.control-input:checked + .control-mark {
+  opacity: 1;
+}
+
+.control-input:checked:hover + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.control-input:checked:hover ~ .control-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.control-input:focus + .control-mark {
+  border: 2px solid var(--purple);
+  opacity: 1;
+}
+
+.control-input:focus + .control-mark-radio {
+  border: 2px solid var(--purple);
+  opacity: 1;
+}
+
+.control-input:focus ~ .control-label {
+  color: var(--purple);
+}
+
+.control-input:checked:focus + .control-mark::after {
+  background: url("../images/svg/vector-hover.svg") no-repeat center/contain;
+}
+
+.control-input:checked:focus + .control-mark-radio::after {
+  background-color: var(--purple);
+}
+
+.control-input:checked:hover + .control-mark::after {
+  background: url("../images/svg/vector.svg") no-repeat center/contain;
+  opacity: 0.5;
+}
+
+.control-input:checked:hover + .control-mark-radio::after {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.control-input:active + .control-mark,
+.control-input:checked:active + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.control-input:active ~ .control-label,
+.control-input:checked:active ~ .control-label,
+.control-input:active + .control-mark-radio::after,
+.control-input:checked:active + .control-mark-radio::after {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.control-input:active + .control-mark::after,
+.control-input:checked:active + .control-mark::after {
+  background: url("../images/svg/vector.svg") no-repeat center/contain;
+  opacity: 0.2;
+}
+
 .catalog-filter-label {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1551,8 +1615,19 @@ img {
   cursor: pointer;
 }
 
+.pagination-show-more:hover {
+  outline: 3px solid var(--b-black);
+  border-color: transparent;
+}
+
 .pagination-show-more:focus {
   outline: 5px solid var(--purple);
+  border-color: transparent;
+}
+
+.pagination-show-more:active {
+  outline: 3px solid rgba(125, 125, 125, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   border-color: transparent;
 }
 
@@ -1578,9 +1653,21 @@ img {
 .pagination-link {
   font-size: 16px;
   line-height: 19px;
-  color: var(--b-dark);
   text-align: center;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.pagination-link:hover {
+  color: var(--b-dark);
+}
+
+.pagination-link:focus {
+  outline: 5px solid var(--purple);
+}
+
+.pagination-link:active {
+  outline: none;
+  color: rgba(68, 68, 68, 0.1);
 }
 
 .pagination-next,
@@ -1625,6 +1712,7 @@ img {
 
 .footer-logo {
   margin-bottom: 35px;
+  outline: none;
 }
 
 .footer-item {
@@ -1790,6 +1878,7 @@ img {
 
 .footer-author-link {
   text-align: right;
+  outline: none;
 }
 
 .footer-author-link:hover .footer-link-htmlacademy {
