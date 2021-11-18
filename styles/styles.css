@@ -2,7 +2,7 @@
   Section - Подключение шрифтов
 ================================= */
 @font-face {
-  font-family: "Releway";
+  font-family: "Raleway";
   font-weight: 800;
   font-style: normal;
 
@@ -42,7 +42,7 @@
 ================================= */
 :root {
   --primary-ff: "Rubik", arial, helvetica, sans-serif;
-  --secondary-ff: "Releway", arial, helvetica, sans-serif;
+  --secondary-ff: "Raleway", arial, helvetica, sans-serif;
   --b-black: #000000;
   --b-dark: #444444;
   --b-grey: #dcdcdc;
