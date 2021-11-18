@@ -1919,7 +1919,6 @@ img {
 .control-mark-radio::after {
   width: 8px;
   height: 8px;
-
   border-radius: 50%;
   background: var(--b-black);
 }
