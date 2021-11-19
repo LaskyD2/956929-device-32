@@ -798,7 +798,7 @@ img {
 
 .slider-title {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .slider-button {
@@ -817,7 +817,7 @@ img {
 }
 
 .slider-description {
-  margin-bottom: 41px;
+  margin-bottom: 38px;
 }
 
 .slider-navigation-buttom {
@@ -1006,7 +1006,7 @@ img {
   display: grid;
 
   width: 280px;
-  padding-top: 12px;
+  padding-top: 9px;
 
   flex-shrink: 0;
   row-gap: 23px;
@@ -1204,7 +1204,7 @@ img {
   display: grid;
 
   margin-top: 70px;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 
   row-gap: 10px;
 }
@@ -1241,7 +1241,7 @@ img {
   font-size: 24px;
   line-height: 30px;
 
-  margin-top: 30px;
+  margin-top: 29px;
   margin-bottom: 17px;
 
   color: var(--b-dark);
@@ -1271,7 +1271,7 @@ img {
 
 .newsletters {
   padding-top: 67px;
-  padding-bottom: 130px;
+  padding-bottom: 131px;
 
   background-color: var(--b-light);
 }
@@ -1311,7 +1311,7 @@ img {
   line-height: 30px;
 
   width: 600px;
-  padding: 12px 0;
+  padding: 12px 0 10px;
 
   border: none;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
@@ -1436,15 +1436,14 @@ img {
 .newsletters-info-text {
   position: relative;
 
-  margin-top: 5px;
   margin-left: 40px;
   padding-left: 22px;
 }
 
 .newsletters-info-text::after {
   position: absolute;
-  top: 6px;
-  left: -15px;
+  top: 8px;
+  left: -14px;
 
   width: 14px;
   height: 14px;
@@ -1567,6 +1566,10 @@ img {
   position: relative;
 }
 
+.product-card .button-hover {
+  padding: 10px 17px;
+}
+
 .product-card-new::after {
   font-family: var(--primary-ff);
   font-size: 14px;
@@ -1597,7 +1600,7 @@ img {
 
 .product-card-link {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 23px;
 
   letter-spacing: -0.02em;
 
@@ -1647,7 +1650,7 @@ img {
 
   display: block;
 
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 
   border: none;
 }
@@ -1716,11 +1719,13 @@ img {
   margin: 0;
 
   color: var(--b-dark);
+  margin-top: 2px;
+  margin-right: 2px;
 }
 
 .catalog-filter-group {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   padding: 0;
 
   border: none;
@@ -1728,6 +1733,18 @@ img {
 
 .catalog-filter-group:nth-child(2) {
   margin-bottom: 28px;
+}
+
+.catalog-filter-group:nth-child(2) .catalog-filter-title {
+  margin-bottom: 22px;
+}
+
+.catalog-filter-group:nth-child(3) {
+  margin-bottom: 27px;
+}
+
+.catalog-filter-group:nth-child(3) .catalog-filter-title {
+  margin-bottom: 22px;
 }
 
 .catalog-filter-title {
@@ -1749,7 +1766,7 @@ img {
 .catalog-filter-title::after {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
 
   width: 100%;
   height: 2px;
@@ -1877,7 +1894,7 @@ img {
 
   display: block;
 
-  padding-left: 37px;
+  padding-left: 35px;
 
   cursor: pointer;
 }
@@ -1988,7 +2005,7 @@ img {
   line-height: 19px;
 
   width: 100%;
-  margin-bottom: 52px;
+  margin-bottom: 51px;
   padding: 15px 20px;
 
   cursor: pointer;
@@ -2068,7 +2085,7 @@ img {
 
   display: block;
 
-  padding: 28px 30px;
+  padding: 26px 25px 26px 30px;
 
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -2076,12 +2093,16 @@ img {
   color: var(--b-black);
 }
 
+.pagination-next {
+  padding: 26px;
+}
+
 .pagination-item-prev {
-  margin-right: 168px;
+  margin-right: 171px;
 }
 
 .pagination-item-next {
-  margin-left: 107px;
+  margin-left: 117px;
 }
 
 /* ==================================
@@ -2107,10 +2128,11 @@ img {
 
 .footer-item:nth-child(2) {
   margin-right: auto;
-  margin-left: 91px;
+  margin-left: 93px;
 }
 
 .footer-logo {
+  margin-left: -2px;
   margin-bottom: 35px;
 
   outline: none;
@@ -2181,7 +2203,7 @@ img {
 
 .footer-menu-item {
   max-width: 170px;
-  padding-left: 30px;
+  padding-left: 29px;
 }
 
 .footer-menu-link {
@@ -2237,7 +2259,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  margin-left: 173px;
+  margin-left: 172px;
 }
 
 .footer-social-item {
@@ -2331,7 +2353,7 @@ img {
 .catalog-filters-row {
   display: flex;
 
-  padding: 27px 0 25px 50px;
+  padding: 24px 0 26px 52px;
 
   background: var(--b-grey);
 
@@ -2377,7 +2399,7 @@ img {
   display: flex;
 
   width: 832px;
-  padding: 19px 0 22px 72px;
+  padding: 19px 0 20px 72px;
 
   align-items: center;
 }
@@ -2388,7 +2410,7 @@ img {
   font-size: 16px;
   line-height: 18px;
 
-  margin-right: 47px;
+  margin-right: 42px;
 }
 
 .sort-dir {
@@ -2437,21 +2459,21 @@ img {
 
 .catalog-wrapper {
   width: 832px;
-  padding: 69px 0 72px 72px;
+  padding: 69px 0 76px 72px;
 }
 
 .product-list {
   display: -ms-grid;
   display: grid;
 
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 
   -ms-grid-columns: 360px 40px 360px;
   grid-template-columns: repeat(2, 360px);
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
-  row-gap: 50px;
+  row-gap: 46px;
 }
 
 .user-menu-item {
@@ -2668,9 +2690,9 @@ img {
 .modal {
   width: 100%;
   max-width: 920px;
-  padding: 70px 80px;
+  padding: 63px 70px 53px;
 
-  outline: 10px solid var(--b-black);
+  border: 10px solid var(--b-black);
   background-color: var(--b-white);
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -2678,12 +2700,15 @@ img {
 .modal-header {
   display: flex;
 
-  margin-bottom: 70px;
+  margin-bottom: 62px;
 
   justify-content: space-between;
 }
 
 .modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   width: 50px;
   height: 50px;
 
@@ -2692,6 +2717,8 @@ img {
   border: none;
   outline: none;
   background: transparent;
+  margin-top: 4px;
+  padding: 0;
 }
 
 .modal-close:hover {
@@ -2721,7 +2748,7 @@ img {
 
   display: block;
 
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 
   letter-spacing: -0.02em;
 
@@ -2729,6 +2756,7 @@ img {
 }
 
 .modal-form-field {
+  font-family: var(--primary-ff);
   font-size: 16px;
   line-height: 20px;
 
@@ -2736,6 +2764,7 @@ img {
   height: 60px;
   padding-right: 50px;
   padding-left: 20px;
+  margin-bottom: 6px;
 
   border: none;
   background-color: var(--b-light);
@@ -2813,14 +2842,20 @@ img {
 
 .modal-message-error {
   color: var(--error);
+  font-size: italic;
 }
 
 .modal-form-group {
   width: 360px;
+  margin-bottom: 14px;
 }
 
 .modal-form-group:last-child {
-  margin-top: 40px;
+  margin-top: 23px;
+}
+
+.modal-form-group .button-hover {
+  padding: 10px 30px;
 }
 
 .modal-form-order {
@@ -2849,12 +2884,13 @@ img {
   padding: 0 45px;
 
   text-align: center;
+  -moz-appearance: textfield;
 }
 
 .modal-form-field-number::-webkit-outer-spin-button,
 .modal-form-field-number::-webkit-inner-spin-button {
   display: none;
-
+  -moz-appearance: textfield;
   -webkit-appearance: none;
 }
 
